@@ -6,10 +6,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <style>
-
+        .img-fluid{
+            width: 100%;
+            height: 130vh; 
+            zoom: 65%; 
+            object-fit: cover;
+        }
+        .expert .img-fluid{
+            width: unset;
+            height: unset; 
+            zoom: unset; 
+            object-fit: unset;
+        }
     </style>
     <title>Tennis Club de Torcy</title>
-
 
     <header>
         <!-- Navbar -->
@@ -80,7 +90,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="css/img/tennis-club-entree-scaled.jpeg" class="d-block img-fluid h-50">
+                    <img src="css/img/tennis-club-entree-scaled.jpeg" class="d-block img-fluid">
 
                     <div class="carousel-caption">
                         <h5 style="color: pink;">J'aime les pomme de terre</h5>
@@ -96,9 +106,9 @@
                     <img src="css/img/terrains-interieur-scaled.jpeg" class="d-block img-fluid">
                     <div class="carousel-caption">
                         <h5 style="color: pink;">J'aime les pomme de terre</h5>
-                    </div>
-                </div>
-            </div>
+                    </div> <!-- .carousel-caption -->
+                </div><!-- .carousel-item -->
+            </div><!-- .carousel-inner -->
 
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -109,11 +119,54 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div><!-- carousel slide -->
+
+        <!-- Club Presentation -->
+        <center>
+        <div>
+            <h2>Lorem, ipsum dolor.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptate, cum eius tenetur accusantium culpa molestiae aspernatur ad aut nihil harum quasi nisi dolores! Blanditiis reiciendis distinctio atque asperiores omnis.</p>
+            </center>
+        </div>
+        <!-- Actuality -->
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum eum maxime, eligendi blanditiis nobis, porro iusto tempore accusamus nesciunt distinctio atque quia quisquam minus nemo vel dolorem est. Tempore!</p>
+        <!-- Our exeperts -->
+        <div class="row">
+            <h2>Our Experts</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique!</p>
+            <div class="col">
+                <img src="css\img\beatrice-scaled.jpeg" alt="beatrice" class="img-fluid exeperts">
+            </div>
+            <div class="col">
+                <img src="css\img\christophe.jpeg" alt="christophe" class="img-fluid exeperts">
+            </div>
+            <div class="col">
+                <img src="css\img\lucien-cours-enfant-scaled.jpeg" alt="lucien" class="img-fluid exeperts">
+            </div>
         </div>
     </main>
-
+    <br>
     <footer>
+        <div class="row">
+            <div class="col">
+                <p>Mail : tennisclubdetorcy@wanadoo.fr</p>
+                <p>Téléphone : 01 60 06 65 90</p>
+                <p>Adresse : 13 Avenue de Lingenfeld, 77200 Torcy</p>
+            </div>
+            <div class="col">
+                <button style="padding: 1px, 2px;" id="Facebook">Notre page Facebook</button>
+            </div>
+        </div>
+        
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        // Redirecting towards the facebook page
+        document.getElementById("Facebook").addEventListener("click",function(){
+            document.location.href="https://www.facebook.com/tctorcy";
+        })
+    </script>
 </body>
 </html>
