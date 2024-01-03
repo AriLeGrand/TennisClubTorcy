@@ -6,4 +6,9 @@ img#navbar-brand-logo{
     width: 10vh;
 }
 
-
+#table-table{
+    justify-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
